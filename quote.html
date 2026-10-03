@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Free Flooring Quote Melbourne | Plank &amp; Pattern Flooring</title>
+  <meta name="description" content="Request a free measure and fixed quote for flooring supply and installation in Melbourne. See an indicative price range for your floor while you fill in the form.">
+  <link rel="canonical" href="https://www.plankandpattern.com.au/quote.html">
+  <meta name="theme-color" content="#1b232a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Plank &amp; Pattern Flooring">
+  <meta property="og:title" content="Free Flooring Quote Melbourne | Plank &amp; Pattern Flooring">
+  <meta property="og:description" content="Request a free measure and fixed quote for flooring supply and installation in Melbourne. See an indicative price range for your floor while you fill in the form.">
+  <meta property="og:url" content="https://www.plankandpattern.com.au/quote.html">
+  <meta property="og:image" content="https://www.plankandpattern.com.au/assets/img/og-image.jpg">
+  <meta property="og:locale" content="en_AU">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&amp;family=Figtree:ital,wght@0,400..700;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="Plank &amp; Pattern Flooring, home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path class="b1" d="M3 9 15 3v5L3 14z"/><path class="b2" d="M17 3l12 6v5L17 8z"/>
+          <path class="b2" d="M3 17l12-6v5L3 22z"/><path class="b1" d="M17 11l12 6v5l-12-6z"/>
+          <path class="b1" d="M3 25l12-6v5L3 30z"/><path class="b2" d="M17 19l12 6v5l-12-6z"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Plank <span class="amp">&amp;</span> Pattern</span>
+          <span class="brand__sub">Flooring · Melbourne</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="installation.html">Installation</a></li>
+          <li><a href="supply.html">Supply</a></li>
+          <li><a href="service-areas.html">Service areas</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+        <a class="nav-phone" href="tel:+61491570156">0491 570 156</a>
+        <a class="btn btn--primary btn--sm" href="quote.html" aria-current="page">Free quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="room page-hero" aria-labelledby="page-title">
+      <div class="room__wall">
+        <div class="wrap page-hero__inner">
+          <p class="crumbs"><a href="index.html">Home</a> / Free quote</p>
+          <p class="eyebrow">Free measure &amp; quote</p>
+          <h1 id="page-title">Tell us about your floor</h1>
+          <p class="lede">Fill in what you know and we'll call to book a free measure. The price guide beside the form updates as you go.</p>
+        </div>
+      </div>
+      <div class="skirting" aria-hidden="true"></div>
+      <div class="floor-stage floor-stage--short">
+        <canvas id="quote-floor" data-floor="herringbone" data-span="4200" aria-hidden="true"></canvas>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="wrap quote-layout">
+        <div>
+          <h2 id="form-title" class="visually-hidden">Quote request form</h2>
+          <form class="form-grid" name="quote" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-quote-form novalidate>
+            <input type="hidden" name="form-name" value="quote">
+            <p class="honeypot" aria-hidden="true">
+              <label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+
+            <fieldset class="field field--full">
+              <legend>What do you need?</legend>
+              <div class="options">
+                <label class="option"><input type="radio" name="service" value="supply-install" checked><span>Supply &amp; install</span></label>
+                <label class="option"><input type="radio" name="service" value="supply"><span>Supply only</span></label>
+                <label class="option"><input type="radio" name="service" value="install"><span>Install only</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="floor-type">Floor type</label>
+              <select id="floor-type" name="floor_type">
+                <option value="hybrid" selected>Hybrid</option>
+                <option value="laminate">Laminate</option>
+                <option value="vinyl">Vinyl plank</option>
+                <option value="engineered">Engineered timber</option>
+                <option value="solid">Solid timber</option>
+                <option value="herringbone">Herringbone or chevron</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="area">Approximate area (m²)</label>
+              <input id="area" name="area_m2" type="number" inputmode="decimal" min="1" max="5000" step="0.5" placeholder="e.g. 60">
+              <p class="hint">A rough figure is fine. We measure on site.</p>
+            </div>
+
+            <div class="field">
+              <label for="property">Property type</label>
+              <select id="property" name="property_type">
+                <option>House</option>
+                <option>Townhouse</option>
+                <option>Apartment</option>
+                <option>New build</option>
+                <option>Commercial</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="current-floor">What's on the floor now?</label>
+              <select id="current-floor" name="current_floor">
+                <option>Carpet</option>
+                <option>Tiles</option>
+                <option>Floating floor</option>
+                <option>Timber boards</option>
+                <option>Vinyl or lino</option>
+                <option>Bare concrete</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+
+            <fieldset class="field field--full">
+              <legend>Extras</legend>
+              <div class="form-grid" style="gap: 10px 18px; margin-top: 6px;">
+                <label class="checkbox"><input type="checkbox" id="extra-removal" name="remove_old_floor" value="yes"> Remove and dispose of the old floor</label>
+                <label class="checkbox"><input type="checkbox" id="extra-levelling" name="levelling" value="yes"> The floor may need levelling</label>
+                <label class="checkbox"><input type="checkbox" id="extra-stairs" name="stairs" value="yes"> Stairs to be done as well</label>
+                <label class="checkbox"><input type="checkbox" id="extra-skirting" name="new_skirting" value="yes"> New skirting boards</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="suburb">Suburb <span class="req" aria-hidden="true">*</span></label>
+              <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required>
+            </div>
+
+            <div class="field">
+              <label for="timing">When would you like it done?</label>
+              <select id="timing" name="timing">
+                <option>As soon as possible</option>
+                <option>Within a month</option>
+                <option>In 1–3 months</option>
+                <option>Just getting prices</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="call-time">Best time to call</label>
+              <select id="call-time" name="call_time">
+                <option>Any time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>After 5 pm</option>
+              </select>
+            </div>
+
+            <div class="field field--full">
+              <label for="message">Anything else we should know?</label>
+              <textarea id="message" name="message" placeholder="Which rooms, stairs, access or parking, the look you're after…"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit">Send my quote request</button>
+              <p class="fine">Fields marked * are required. We use your details only to prepare your quote.</p>
+            </div>
+          </form>
+          <div class="form-status" data-form-status role="status" hidden></div>
+        </div>
+
+        <div class="sticky-col">
+          <section class="panel calc" data-estimate aria-labelledby="estimate-title">
+            <h2 class="panel__title" id="estimate-title">Price guide</h2>
+            <div class="calc__out" aria-live="polite">
+              <span class="k">Indicative range, incl. GST</span>
+              <output class="calc__big" data-estimate-total>$4,200 – $6,600</output>
+              <ul class="calc__lines" data-estimate-lines>
+                <li><span>Hybrid, supplied &amp; laid</span><span>$4,200 – $6,600</span></li>
+              </ul>
+            </div>
+            <p class="calc__note" data-estimate-caption>Example for 60 m². Enter your floor area for your own range.</p>
+            <p class="calc__note">A guide only. Your fixed quote follows the free measure, once we've seen the subfloor.</p>
+          </section>
+
+          <section class="panel" aria-labelledby="contact-title">
+            <h2 class="panel__title" id="contact-title">Or contact us directly</h2>
+            <ul class="contact-list">
+              <li><span class="k">Phone</span><a class="v mono" href="tel:+61491570156">0491 570 156</a></li>
+              <li><span class="k">Email</span><a class="v" href="mailto:quotes@plankandpattern.com.au">quotes@plankandpattern.com.au</a></li>
+              <li><span class="k">Showroom</span><span class="v">Moorabbin VIC 3189, by appointment</span></li>
+              <li><span class="k">Hours</span><span class="v">Mon–Fri 7:00–17:00 · Sat 8:00–12:00</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Plank &amp; Pattern Flooring, home">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path class="b1" d="M3 9 15 3v5L3 14z"/><path class="b2" d="M17 3l12 6v5L17 8z"/>
+          <path class="b2" d="M3 17l12-6v5L3 22z"/><path class="b1" d="M17 11l12 6v5l-12-6z"/>
+          <path class="b1" d="M3 25l12-6v5L3 30z"/><path class="b2" d="M17 19l12 6v5l-12-6z"/>
+        </svg>
+          <span class="brand__text">
+            <span class="brand__name">Plank <span class="amp">&amp;</span> Pattern</span>
+            <span class="brand__sub">Flooring · Melbourne</span>
+          </span>
+        </a>
+        <p>Hard flooring supply and installation for homes, apartments and builders across greater Melbourne.</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a class="mono" href="tel:+61491570156">0491 570 156</a></li>
+          <li><a href="mailto:quotes@plankandpattern.com.au">quotes@plankandpattern.com.au</a></li>
+          <li>Showroom: Moorabbin VIC 3189, by appointment</li>
+          <li>Mon–Fri 7:00–17:00<br>Sat 8:00–12:00</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Floors</h2>
+        <ul>
+          <li><a href="installation.html#methods">Installation methods</a></li>
+          <li><a href="installation.html#prep">Subfloor preparation</a></li>
+          <li><a href="installation.html#stairs">Stairs</a></li>
+          <li><a href="installation.html#apartments">Apartments</a></li>
+          <li><a href="supply.html#timber">Timber species</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="supply.html">Flooring supply</a></li>
+          <li><a href="supply.html#trade">Trade accounts</a></li>
+          <li><a href="service-areas.html">Service areas</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="quote.html">Get a quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>© <span data-year>2026</span> Plank &amp; Pattern Flooring. ABN 00 000 000 000.</span>
+      <span>Fully insured · Serving greater Melbourne, Geelong &amp; the Mornington Peninsula</span>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a class="btn btn--ghost" href="tel:+61491570156">Call us</a>
+    <a class="btn btn--primary" href="quote.html">Free quote</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

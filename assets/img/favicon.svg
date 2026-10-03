@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .b1 { fill: #1b232a; }
+    .b2 { fill: #96652f; }
+    @media (prefers-color-scheme: dark) {
+      .b1 { fill: #e6eae6; }
+      .b2 { fill: #d6a46b; }
+    }
+  </style>
+  <path class="b1" d="M3 9 15 3v5L3 14z"/><path class="b2" d="M17 3l12 6v5L17 8z"/>
+  <path class="b2" d="M3 17l12-6v5L3 22z"/><path class="b1" d="M17 11l12 6v5l-12-6z"/>
+  <path class="b1" d="M3 25l12-6v5L3 30z"/><path class="b2" d="M17 19l12 6v5l-12-6z"/>
+</svg>
